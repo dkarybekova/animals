@@ -1,35 +1,37 @@
 package kg.tutorialapp.animals
 
 import android.os.Bundle
-import android.widget.ImageView
+import android.content.Intent
+import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 class MainActivity : AppCompatActivity() {
 
-    lateinit var image_1: ImageView
-    lateinit var image_2: ImageView
-    lateinit var image_3: ImageView
     lateinit var textview: TextView
+    lateinit var btnCalc: Button
+    lateinit var btnAnimal: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        textview = findViewById(R.id.textView) as TextView
-        image_1 = findViewById(R.id.image_1) as ImageView
-        image_1.setOnClickListener{
-            textview.text = getString((R.string.first))
-        }
+        var actionBar = supportActionBar
+        actionBar!!.title = "Main"
+        actionBar.setDisplayHomeAsUpEnabled(true)
 
-        image_2 = findViewById(R.id.image_2) as ImageView
-        image_2.setOnClickListener{
-            textview.text = getString((R.string.second))
-        }
+        textview = findViewById(R.id.textMain) as TextView
+        textview.text = getString((R.string.text_main))
 
-        image_3 = findViewById(R.id.image_3) as ImageView
-        image_3.setOnClickListener{
-            textview.text = getString((R.string.third))
+        btnAnimal = findViewById(R.id.button1)
+        btnAnimal.setOnClickListener {
+            val animalIntent = Intent(this, AnimalActivity::class.java)
+            startActivity(animalIntent)
+        }
+        btnCalc = findViewById(R.id.button2)
+        btnCalc.setOnClickListener {
+            val calcIntent = Intent(this, CalcActivity::class.java)
+            startActivity(calcIntent)
         }
     }
 }

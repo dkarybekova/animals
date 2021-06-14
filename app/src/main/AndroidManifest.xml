@@ -16,6 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".AnimalActivity"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
+        <activity
+            android:name=".CalcActivity"
+            android:parentActivityName=".MainActivity">
+
+        </activity>
     </application>
 
 </manifest>

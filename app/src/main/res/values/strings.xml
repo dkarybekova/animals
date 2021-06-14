@@ -1,7 +1,15 @@
 <resources>
     <string name="app_name">Animals</string>
+    <string name="text_main"> Homeworks </string>
+    <string name="calculator">Calculator</string>
+    <string name="animals">Animals</string>
     <string name="first">Snake</string>
     <string name="second">Shark</string>
     <string name="third">Snail</string>
-    <string name="text_main"> </string>
+    <string name="text_animals"> </string>
+    <string name="sum">+</string>
+    <string name="sub">-</string>
+    <string name="multi">*</string>
+    <string name="div">/</string>
+    <string name="result"> </string>
 </resources>

@@ -7,59 +7,8 @@
     android:layout_height="match_parent"
     android:layout_marginTop="60dp"
     android:baselineAligned="true"
-    android:background="@color/cardview_shadow_start_color"
     android:orientation="vertical"
     tools:context=".MainActivity">
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        android:baselineAligned="true"
-        android:orientation="horizontal"
-        android:paddingTop="50dp">
-
-        <ImageView
-            android:id="@+id/image_1"
-            android:layout_width="110dp"
-            android:layout_height="120dp"
-            android:layout_gravity="start|top"
-            android:layout_marginStart="25dp"
-            android:clickable="true"
-            android:contentDescription="@string/app_name"
-            android:focusable="true"
-            android:scaleType="fitXY"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/image_2"
-            app:srcCompat="@drawable/snake"
-            tools:layout_editor_absoluteY="95dp" />
-
-        <ImageView
-            android:id="@+id/image_2"
-            android:layout_width="110dp"
-            android:layout_height="120dp"
-            android:layout_gravity="center|top"
-            android:layout_marginStart="15dp"
-            android:contentDescription="@string/app_name"
-            android:scaleType="fitXY"
-            app:srcCompat="@drawable/shark"
-            tools:layout_editor_absoluteX="166dp"
-            tools:layout_editor_absoluteY="95dp" />
-
-        <ImageView
-            android:id="@+id/image_3"
-            android:layout_width="110dp"
-            android:layout_height="120dp"
-            android:layout_gravity="end|top"
-            android:layout_marginStart="15dp"
-            android:contentDescription="@string/app_name"
-            android:scaleType="fitXY"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.186"
-            app:srcCompat="@drawable/snail" />
-    </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -68,7 +17,7 @@
         android:orientation="vertical">
 
         <TextView
-            android:id="@+id/textView"
+            android:id="@+id/textMain"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
@@ -76,4 +25,18 @@
             android:text="@string/text_main"
             android:textSize="35sp" />
     </LinearLayout>
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/animals" />
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/calculator" />
 </LinearLayout>
