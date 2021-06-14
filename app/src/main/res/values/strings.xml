@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">animals</string>
+    <string name="app_name">Animals</string>
+    <string name="first">Snake</string>
+    <string name="second">Shark</string>
+    <string name="third">Snail</string>
+    <string name="text_main"> </string>
 </resources>
