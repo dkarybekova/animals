@@ -11,6 +11,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var textview: TextView
     lateinit var btnCalc: Button
     lateinit var btnAnimal: Button
+    lateinit var btnChronometer: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,6 +33,11 @@ class MainActivity : AppCompatActivity() {
         btnCalc.setOnClickListener {
             val calcIntent = Intent(this, CalcActivity::class.java)
             startActivity(calcIntent)
+        }
+        btnChronometer = findViewById(R.id.btn_chrono)
+        btnChronometer.setOnClickListener{
+            val chronometerIntent = Intent(this, ChronometerActivity::class.java)
+            startActivity(chronometerIntent)
         }
     }
 }

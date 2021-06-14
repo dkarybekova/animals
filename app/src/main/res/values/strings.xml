@@ -3,6 +3,7 @@
     <string name="text_main"> Homeworks </string>
     <string name="calculator">Calculator</string>
     <string name="animals">Animals</string>
+    <string name="chronometer">Chronometer</string>
     <string name="first">Snake</string>
     <string name="second">Shark</string>
     <string name="third">Snail</string>
@@ -12,4 +13,7 @@
     <string name="multi">*</string>
     <string name="div">/</string>
     <string name="result"> </string>
+    <string name="start">Start</string>
+    <string name="stop">Stop</string>
+    <string name="reset">Reset</string>
 </resources>

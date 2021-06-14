@@ -41,7 +41,7 @@
         android:layout_marginTop="5pt"
         android:layout_marginLeft="3pt"
         android:layout_marginRight="3pt">
-        <Button
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnPlus"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -49,9 +49,8 @@
             android:text="@string/sum"
             android:textSize="10pt"
             android:background="@drawable/btn_bg"
-            android:layout_marginHorizontal="7dp">
-        </Button>
-        <Button
+            android:layout_marginHorizontal="7dp"/>
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnSub"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -59,9 +58,8 @@
             android:text="@string/sub"
             android:textSize="10pt"
             android:background="@drawable/btn_bg"
-            android:layout_marginHorizontal="7dp">>
-        </Button>
-        <Button
+            android:layout_marginHorizontal="7dp"/>
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnMulti"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -69,9 +67,8 @@
             android:text="@string/multi"
             android:textSize="10pt"
             android:background="@drawable/btn_bg"
-            android:layout_marginHorizontal="7dp">>
-        </Button>
-        <Button
+            android:layout_marginHorizontal="7dp"/>
+        <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/btnDiv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -79,8 +76,7 @@
             android:text="@string/div"
             android:textSize="10pt"
             android:background="@drawable/btn_bg"
-            android:layout_marginHorizontal="7dp">>
-        </Button>
+            android:layout_marginHorizontal="7dp"/>
     </LinearLayout>
     <TextView
         android:id="@+id/result"
@@ -91,7 +87,7 @@
         android:textSize="16pt"
         android:layout_marginTop="5pt"
         android:gravity="center_horizontal"
-        android:textColor="@color/purple_700"
+        android:textColor="@color/teal_200"
         android:textStyle="bold"
         android:text="">
     </TextView>
