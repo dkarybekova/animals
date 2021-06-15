@@ -12,6 +12,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var btnCalc: Button
     lateinit var btnAnimal: Button
     lateinit var btnChronometer: Button
+    lateinit var btnColor: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,6 +39,11 @@ class MainActivity : AppCompatActivity() {
         btnChronometer.setOnClickListener{
             val chronometerIntent = Intent(this, ChronometerActivity::class.java)
             startActivity(chronometerIntent)
+        }
+        btnColor = findViewById(R.id.btn_color)
+        btnColor.setOnClickListener{
+            val ColorIntent = Intent(this, ColorActivity::class.java)
+            startActivity(ColorIntent)
         }
     }
 }
