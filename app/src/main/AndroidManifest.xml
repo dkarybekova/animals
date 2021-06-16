@@ -15,35 +15,52 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:label="@string/homeworks"
+            android:name=".HomeworkActivities"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity
+            android:label="@string/lessons"
+            android:name=".LessonActivities"
+            android:parentActivityName=".MainActivity">
+        </activity>
 
         <activity
             android:label="@string/animals"
             android:name=".AnimalActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".HomeworkActivities">
         </activity>
 
         <activity
             android:label="@string/calculator"
             android:name=".CalcActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".HomeworkActivities">
         </activity>
 
         <activity
             android:label="@string/chronometer"
             android:name=".ChronometerActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".HomeworkActivities">
         </activity>
 
         <activity
             android:label="@string/color"
             android:name=".ColorActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".HomeworkActivities">
         </activity>
 
         <activity
             android:label="@string/full_calculator"
             android:name=".CalculatorActivity"
-            android:parentActivityName=".MainActivity">
+            android:parentActivityName=".HomeworkActivities">
+        </activity>
+
+        <activity
+            android:label="@string/lesson29"
+            android:name=".RelativeLayoutActivity"
+            android:parentActivityName=".LessonActivities">
         </activity>
     </application>
 

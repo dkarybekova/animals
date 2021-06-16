@@ -1,11 +1,15 @@
 <resources>
     <string name="app_name">Animals</string>
-    <string name="text_main"> Homeworks </string>
+    <string name="homeworks"> Homeworks </string>
+    <string name="lessons"> Lessons </string>
+
     <string name="calculator">Calculator</string>
     <string name="animals">Animals</string>
     <string name="chronometer">Chronometer</string>
     <string name="color">MyColor</string>
     <string name="full_calculator">Full Calculator</string>
+
+    <string name="lesson29">Lesson29 RelativeLayout</string>
 
     <string name="first">Snake</string>
     <string name="second">Shark</string>
