@@ -13,6 +13,7 @@ class MainActivity : AppCompatActivity() {
     lateinit var btnAnimal: Button
     lateinit var btnChronometer: Button
     lateinit var btnColor: Button
+    lateinit var btnCalculator: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,12 +26,12 @@ class MainActivity : AppCompatActivity() {
         textview = findViewById(R.id.textMain) as TextView
         textview.text = getString((R.string.text_main))
 
-        btnAnimal = findViewById(R.id.button1)
+        btnAnimal = findViewById(R.id.btn_animals)
         btnAnimal.setOnClickListener {
             val animalIntent = Intent(this, AnimalActivity::class.java)
             startActivity(animalIntent)
         }
-        btnCalc = findViewById(R.id.button2)
+        btnCalc = findViewById(R.id.btn_calc)
         btnCalc.setOnClickListener {
             val calcIntent = Intent(this, CalcActivity::class.java)
             startActivity(calcIntent)
@@ -44,6 +45,11 @@ class MainActivity : AppCompatActivity() {
         btnColor.setOnClickListener{
             val ColorIntent = Intent(this, ColorActivity::class.java)
             startActivity(ColorIntent)
+        }
+        btnCalculator = findViewById(R.id.btn_calculator)
+        btnCalculator.setOnClickListener{
+            val CalculatorIntent = Intent(this, CalculatorActivity::class.java)
+            startActivity(CalculatorIntent)
         }
     }
 }

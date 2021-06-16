@@ -5,7 +5,6 @@
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Animals">
@@ -18,21 +17,32 @@
         </activity>
 
         <activity
+            android:label="@string/animals"
             android:name=".AnimalActivity"
             android:parentActivityName=".MainActivity">
         </activity>
 
         <activity
+            android:label="@string/calculator"
             android:name=".CalcActivity"
             android:parentActivityName=".MainActivity">
         </activity>
 
-        <activity android:name=".ChronometerActivity"
+        <activity
+            android:label="@string/chronometer"
+            android:name=".ChronometerActivity"
             android:parentActivityName=".MainActivity">
         </activity>
 
         <activity
+            android:label="@string/color"
             android:name=".ColorActivity"
+            android:parentActivityName=".MainActivity">
+        </activity>
+
+        <activity
+            android:label="@string/full_calculator"
+            android:name=".CalculatorActivity"
             android:parentActivityName=".MainActivity">
         </activity>
     </application>

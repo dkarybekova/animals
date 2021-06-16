@@ -5,6 +5,8 @@
     <string name="animals">Animals</string>
     <string name="chronometer">Chronometer</string>
     <string name="color">MyColor</string>
+    <string name="full_calculator">Full Calculator</string>
+
     <string name="first">Snake</string>
     <string name="second">Shark</string>
     <string name="third">Snail</string>

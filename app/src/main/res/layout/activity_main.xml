@@ -26,18 +26,14 @@
             android:textSize="35sp" />
     </LinearLayout>
     <Button
-        android:id="@+id/button1"
+        android:id="@+id/btn_animals"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
         android:text="@string/animals" />
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_calc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
         android:text="@string/calculator" />
     <Button
         android:id="@+id/btn_chrono"
@@ -53,4 +49,11 @@
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:text="@string/color" />
+    <Button
+        android:id="@+id/btn_calculator"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/full_calculator" />
 </LinearLayout>
