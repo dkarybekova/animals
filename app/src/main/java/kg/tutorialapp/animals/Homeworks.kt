@@ -2,6 +2,7 @@ package kg.tutorialapp.animals
 
 import android.os.Bundle
 import android.content.Intent
+import android.gesture.Gesture
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -14,6 +15,7 @@ class HomeworkActivities : AppCompatActivity() {
     lateinit var btnChronometer: Button
     lateinit var btnColor: Button
     lateinit var btnCalculator: Button
+    lateinit var btnGestures: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -25,6 +27,7 @@ class HomeworkActivities : AppCompatActivity() {
 
         textview = findViewById(R.id.textMain) as TextView
         textview.text = getString((R.string.homeworks))
+
 
         btnAnimal = findViewById(R.id.btn_animals)
         btnAnimal.setOnClickListener {
@@ -50,6 +53,11 @@ class HomeworkActivities : AppCompatActivity() {
         btnCalculator.setOnClickListener{
             val CalculatorIntent = Intent(this, CalculatorActivity::class.java)
             startActivity(CalculatorIntent)
+        }
+        btnGestures = findViewById(R.id.btn_gestures)
+        btnGestures.setOnClickListener{
+            val GesturesIntent = Intent(this, GesturesActivity::class.java)
+            startActivity(GesturesIntent)
         }
     }
 }
