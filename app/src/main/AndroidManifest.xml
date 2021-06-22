@@ -68,6 +68,12 @@
             android:name=".GesturesActivity"
             android:parentActivityName=".HomeworkActivities">
         </activity>
+
+        <activity
+            android:label="@string/lesson31"
+            android:name=".ConstraintLayoutActivity"
+            android:parentActivityName=".HomeworkActivities">
+        </activity>
     </application>
 
 </manifest>

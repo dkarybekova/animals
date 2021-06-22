@@ -29,4 +29,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/lesson29" />
+    <Button
+        android:id="@+id/btn_31"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/lesson31" />
 </LinearLayout>
