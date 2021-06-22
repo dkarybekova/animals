@@ -13,6 +13,7 @@
 
     <string name="lesson29">Lesson29 RelativeLayout</string>
     <string name="lesson31">Lesson31 ConstraintLayout</string>
+    <string name="lesson33">Lesson32_33 Activity Lifecycle</string>
 
     <string name="first">Snake</string>
     <string name="second">Shark</string>
@@ -42,4 +43,7 @@
     <string name="like">Like</string>
     <string name="watch">Watch</string>
     <string name="share">Share</string>
+    <string name="enter_data">Enter Data</string>
+    <string name="submit_data">Button</string>
+    <string name="activity_text_output"/>
 </resources>

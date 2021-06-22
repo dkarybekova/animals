@@ -5,12 +5,14 @@ import android.content.Intent
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.Lifecycle
 
 class LessonActivities : AppCompatActivity() {
 
     lateinit var textview: TextView
     lateinit var btn29: Button
     lateinit var btn31: Button
+    lateinit var btn33: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -32,6 +34,11 @@ class LessonActivities : AppCompatActivity() {
         btn31.setOnClickListener {
             val lesson31Intent = Intent(this, ConstraintLayoutActivity::class.java)
             startActivity(lesson31Intent)
+        }
+        btn33 = findViewById(R.id.btn_33)
+        btn33.setOnClickListener {
+            val lesson33Intent = Intent(this, LifecycleActivity::class.java)
+            startActivity(lesson33Intent)
         }
     }
 }

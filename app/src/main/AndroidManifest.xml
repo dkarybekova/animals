@@ -80,6 +80,17 @@
             android:name=".MoviePosterActivity"
             android:parentActivityName=".HomeworkActivities">
         </activity>
+
+        <activity
+            android:label="@string/lesson33"
+            android:name=".LifecycleActivity"
+            android:parentActivityName=".LessonActivities">
+        </activity>
+        <activity
+            android:label="@string/activity_text_output"
+            android:name=".ActivityOutput"
+            android:parentActivityName=".LifecycleActivity">
+        </activity>
     </application>
 
 </manifest>
