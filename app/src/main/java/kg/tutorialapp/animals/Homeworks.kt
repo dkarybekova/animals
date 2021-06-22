@@ -16,6 +16,7 @@ class HomeworkActivities : AppCompatActivity() {
     lateinit var btnColor: Button
     lateinit var btnCalculator: Button
     lateinit var btnGestures: Button
+    lateinit var btnMovie: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -58,6 +59,11 @@ class HomeworkActivities : AppCompatActivity() {
         btnGestures.setOnClickListener{
             val GesturesIntent = Intent(this, GesturesActivity::class.java)
             startActivity(GesturesIntent)
+        }
+        btnMovie = findViewById(R.id.btn_movie)
+        btnMovie.setOnClickListener{
+            val MovieIntent = Intent(this, MoviePosterActivity::class.java)
+            startActivity(MovieIntent)
         }
     }
 }

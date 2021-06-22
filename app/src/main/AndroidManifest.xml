@@ -74,6 +74,12 @@
             android:name=".ConstraintLayoutActivity"
             android:parentActivityName=".HomeworkActivities">
         </activity>
+
+        <activity
+            android:label="@string/movie_poster"
+            android:name=".MoviePosterActivity"
+            android:parentActivityName=".HomeworkActivities">
+        </activity>
     </application>
 
 </manifest>

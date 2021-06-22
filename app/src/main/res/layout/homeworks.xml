@@ -54,4 +54,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/gestures" />
+    <Button
+        android:id="@+id/btn_movie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/movie_poster" />
 </LinearLayout>
