@@ -13,6 +13,7 @@ class LessonActivities : AppCompatActivity() {
     lateinit var btn29: Button
     lateinit var btn31: Button
     lateinit var btn33: Button
+    lateinit var btn34: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -39,6 +40,11 @@ class LessonActivities : AppCompatActivity() {
         btn33.setOnClickListener {
             val lesson33Intent = Intent(this, LifecycleActivity::class.java)
             startActivity(lesson33Intent)
+        }
+        btn34 = findViewById(R.id.btn_34)
+        btn34.setOnClickListener {
+            val lesson34Intent = Intent(this, ActivityA::class.java)
+            startActivity(lesson34Intent)
         }
     }
 }

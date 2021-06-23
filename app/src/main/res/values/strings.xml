@@ -14,6 +14,7 @@
     <string name="lesson29">Lesson29 RelativeLayout</string>
     <string name="lesson31">Lesson31 ConstraintLayout</string>
     <string name="lesson33">Lesson32_33 Activity Lifecycle</string>
+    <string name="lesson34">Lesson34 Activity Stack</string>
 
     <string name="first">Snake</string>
     <string name="second">Shark</string>
@@ -46,4 +47,16 @@
     <string name="enter_data">Enter Data</string>
     <string name="submit_data">Button</string>
     <string name="activity_text_output"/>
+
+    <string name="a">Activity A</string>
+    <string name="btn_a">Start B</string>
+    <string name="b">Activity B</string>
+    <string name="btn_b">Start C</string>
+    <string name="c">Activity C</string>
+    <string name="btn_c">Start D</string>
+    <string name="d">Activity D</string>
+    <string name="btn_d">Start A</string>
+    <string name="btn_start_d">Start D</string>
+    <string name="btn_start_c">Start C</string>
+    <string name="text_launch_top"/>
 </resources>

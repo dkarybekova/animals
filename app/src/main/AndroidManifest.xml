@@ -91,6 +91,26 @@
             android:name=".ActivityOutput"
             android:parentActivityName=".LifecycleActivity">
         </activity>
+        <activity
+            android:label="@string/a"
+            android:name=".ActivityA"
+            android:parentActivityName=".LessonActivities">
+        </activity>
+        <activity
+            android:label="@string/b"
+            android:name=".ActivityB"
+            android:parentActivityName=".LessonActivities">
+        </activity>
+        <activity
+            android:label="@string/c"
+            android:name=".ActivityC"
+            android:parentActivityName=".LessonActivities">
+        </activity>
+        <activity
+            android:label="@string/d"
+            android:name=".ActivityD"
+            android:parentActivityName=".LessonActivities">
+        </activity>
     </application>
 
 </manifest>
