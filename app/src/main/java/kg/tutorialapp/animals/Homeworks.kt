@@ -28,54 +28,83 @@ class HomeworkActivities : AppCompatActivity() {
         actionBar!!.title = "Main"
         actionBar.setDisplayHomeAsUpEnabled(true)
 
+        getText()
+        animalsActivity()
+        calcActivity()
+        colorActivity()
+        calculatorActivity()
+        chronoActivity()
+        gesturesActivity()
+        movieActivity()
+        fragmentArgActivity()
+        fragmentsActivity()
+
+    }
+    private fun getText(){
         textview = findViewById(R.id.textMain) as TextView
         textview.text = getString((R.string.homeworks))
-
-
+    }
+    private fun animalsActivity() {
         btnAnimal = findViewById(R.id.btn_animals)
         btnAnimal.setOnClickListener {
             val animalIntent = Intent(this, AnimalActivity::class.java)
             startActivity(animalIntent)
         }
+    }
+    private fun calcActivity() {
         btnCalc = findViewById(R.id.btn_calc)
         btnCalc.setOnClickListener {
             val calcIntent = Intent(this, CalcActivity::class.java)
             startActivity(calcIntent)
         }
+    }
+    private fun chronoActivity() {
         btnChronometer = findViewById(R.id.btn_chrono)
-        btnChronometer.setOnClickListener{
+        btnChronometer.setOnClickListener {
             val chronometerIntent = Intent(this, ChronometerActivity::class.java)
             startActivity(chronometerIntent)
         }
+    }
+    private fun colorActivity() {
         btnColor = findViewById(R.id.btn_color)
-        btnColor.setOnClickListener{
-            val ColorIntent = Intent(this, ColorActivity::class.java)
-            startActivity(ColorIntent)
+        btnColor.setOnClickListener {
+            val colorIntent = Intent(this, ColorActivity::class.java)
+            startActivity(colorIntent)
         }
+    }
+    private fun calculatorActivity() {
         btnCalculator = findViewById(R.id.btn_calculator)
-        btnCalculator.setOnClickListener{
-            val CalculatorIntent = Intent(this, CalculatorActivity::class.java)
-            startActivity(CalculatorIntent)
+        btnCalculator.setOnClickListener {
+            val calculatorIntent = Intent(this, CalculatorActivity::class.java)
+            startActivity(calculatorIntent)
         }
+    }
+    private fun gesturesActivity() {
         btnGestures = findViewById(R.id.btn_gestures)
-        btnGestures.setOnClickListener{
-            val GesturesIntent = Intent(this, GesturesActivity::class.java)
-            startActivity(GesturesIntent)
+        btnGestures.setOnClickListener {
+            val gesturesIntent = Intent(this, GesturesActivity::class.java)
+            startActivity(gesturesIntent)
         }
+    }
+    private fun movieActivity() {
         btnMovie = findViewById(R.id.btn_movie)
-        btnMovie.setOnClickListener{
-            val MovieIntent = Intent(this, MoviePosterActivity::class.java)
-            startActivity(MovieIntent)
+        btnMovie.setOnClickListener {
+            val movieIntent = Intent(this, MoviePosterActivity::class.java)
+            startActivity(movieIntent)
         }
+    }
+    private fun fragmentsActivity() {
         btnFragments = findViewById(R.id.btn_fragments)
-        btnFragments.setOnClickListener{
-            val FragmentsIntent = Intent(this, FragmentsActivity::class.java)
-            startActivity(FragmentsIntent)
+        btnFragments.setOnClickListener {
+            val fragmentsIntent = Intent(this, FragmentsActivity::class.java)
+            startActivity(fragmentsIntent)
         }
+    }
+    private fun fragmentArgActivity() {
         btnFragmentArg = findViewById(R.id.btn_fragment_arg)
-        btnFragmentArg.setOnClickListener{
-            val FragmentArgIntent = Intent(this, FragmentArgInputActivity::class.java)
-            startActivity(FragmentArgIntent)
+        btnFragmentArg.setOnClickListener {
+            val fragmentArgIntent = Intent(this, FragmentArgInputActivity::class.java)
+            startActivity(fragmentArgIntent)
         }
     }
 }
