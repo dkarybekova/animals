@@ -9,7 +9,8 @@
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Animals">
+        android:theme="@style/Theme.Animals"
+        tools:ignore="AllowBackup">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -132,6 +133,16 @@
             android:label="@string/fragment3"
             android:name=".ActivityFragment3"
             android:parentActivityName=".LessonActivities">
+        </activity>
+        <activity
+            android:label="@string/fragment_arg"
+            android:name=".FragmentArgOutputActivity"
+            android:parentActivityName=".HomeworkActivities">
+        </activity>
+        <activity
+            android:label="@string/fragment_arg"
+            android:name=".FragmentArgInputActivity"
+            android:parentActivityName=".HomeworkActivities">
         </activity>
     </application>
 

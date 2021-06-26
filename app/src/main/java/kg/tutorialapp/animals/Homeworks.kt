@@ -2,7 +2,6 @@ package kg.tutorialapp.animals
 
 import android.os.Bundle
 import android.content.Intent
-import android.gesture.Gesture
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
@@ -18,13 +17,14 @@ class HomeworkActivities : AppCompatActivity() {
     lateinit var btnGestures: Button
     lateinit var btnMovie: Button
     lateinit var btnFragments: Button
+    lateinit var btnFragmentArg: Button
 
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.homeworks)
 
-        var actionBar = supportActionBar
+        val actionBar = supportActionBar
         actionBar!!.title = "Main"
         actionBar.setDisplayHomeAsUpEnabled(true)
 
@@ -71,6 +71,11 @@ class HomeworkActivities : AppCompatActivity() {
         btnFragments.setOnClickListener{
             val FragmentsIntent = Intent(this, FragmentsActivity::class.java)
             startActivity(FragmentsIntent)
+        }
+        btnFragmentArg = findViewById(R.id.btn_fragment_arg)
+        btnFragmentArg.setOnClickListener{
+            val FragmentArgIntent = Intent(this, FragmentArgInputActivity::class.java)
+            startActivity(FragmentArgIntent)
         }
     }
 }
