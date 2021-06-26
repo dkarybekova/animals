@@ -10,6 +10,8 @@
     <string name="full_calculator">Full Calculator</string>
     <string name="gestures">Gestures</string>
     <string name="movie_poster">Movie Poster</string>
+    <string name="fragments">Fragments</string>
+
 
     <string name="lesson29">Lesson29 RelativeLayout</string>
     <string name="lesson31">Lesson31 ConstraintLayout</string>
@@ -59,4 +61,8 @@
     <string name="btn_start_d">Start D</string>
     <string name="btn_start_c">Start C</string>
     <string name="text_launch_top"/>
+
+    <string name="fragment1">Go to Fragment 1</string>
+    <string name="fragment2">Go to Fragment 2</string>
+    <string name="fragment3">Go to Fragment 3</string>
 </resources>

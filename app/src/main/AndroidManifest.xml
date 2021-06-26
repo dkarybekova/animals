@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="kg.tutorialapp.animals">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="kg.tutorialapp.animals"
+    tools:ignore="Instantiatable">
 
     <application
         android:allowBackup="true"
@@ -109,6 +111,26 @@
         <activity
             android:label="@string/d"
             android:name=".ActivityD"
+            android:parentActivityName=".LessonActivities">
+        </activity>
+        <activity
+            android:label="@string/fragments"
+            android:name=".FragmentsActivity"
+            android:parentActivityName=".HomeworkActivities">
+        </activity>
+        <activity
+            android:label="@string/fragment1"
+            android:name=".ActivityFragment1"
+            android:parentActivityName=".HomeworkActivities">
+        </activity>
+        <activity
+            android:label="@string/fragment2"
+            android:name=".ActivityFragment2"
+            android:parentActivityName=".LessonActivities">
+        </activity>
+        <activity
+            android:label="@string/fragment3"
+            android:name=".ActivityFragment3"
             android:parentActivityName=".LessonActivities">
         </activity>
     </application>

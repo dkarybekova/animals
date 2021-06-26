@@ -17,6 +17,8 @@ class HomeworkActivities : AppCompatActivity() {
     lateinit var btnCalculator: Button
     lateinit var btnGestures: Button
     lateinit var btnMovie: Button
+    lateinit var btnFragments: Button
+
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -64,6 +66,11 @@ class HomeworkActivities : AppCompatActivity() {
         btnMovie.setOnClickListener{
             val MovieIntent = Intent(this, MoviePosterActivity::class.java)
             startActivity(MovieIntent)
+        }
+        btnFragments = findViewById(R.id.btn_fragments)
+        btnFragments.setOnClickListener{
+            val FragmentsIntent = Intent(this, FragmentsActivity::class.java)
+            startActivity(FragmentsIntent)
         }
     }
 }
