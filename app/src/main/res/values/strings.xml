@@ -66,4 +66,12 @@
     <string name="fragment1">Go to Fragment 1</string>
     <string name="fragment2">Go to Fragment 2</string>
     <string name="fragment3">Go to Fragment 3</string>
+
+    <string name="first_item">First Item</string>
+    <string name="second_item">Second Item</string>
+    <string name="third_item">Third Item</string>
+    <string name="fourth_item">Fourth Item</string>
+    <string name="fifth_item">Fifth Item</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
 </resources>

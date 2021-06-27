@@ -23,18 +23,26 @@ class MainActivity : AppCompatActivity() {
         actionBar!!.title = "Main"
         actionBar.setDisplayHomeAsUpEnabled(true)
 
+        homeworkActivities()
+        lessonActivities()
+    }
 
+    private fun homeworkActivities() {
         btnHomeworks = findViewById(R.id.btn_homeworks)
         btnHomeworks.setOnClickListener {
             val homeworksIntent = Intent(this, HomeworkActivities::class.java)
             startActivity(homeworksIntent)
         }
+    }
+
+    private fun lessonActivities() {
         btnLessons = findViewById(R.id.btn_lessons)
         btnLessons.setOnClickListener {
             val lessonsIntent = Intent(this, LessonActivities::class.java)
             startActivity(lessonsIntent)
         }
     }
+
     override fun onCreateOptionsMenu(menu: Menu?): Boolean {
         menuInflater.inflate(R.menu.menu_bar, menu)
         return true
