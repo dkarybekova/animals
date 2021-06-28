@@ -63,9 +63,9 @@
     <string name="btn_start_c">Start C</string>
     <string name="text_launch_top"/>
 
-    <string name="fragment1">Go to Fragment 1</string>
-    <string name="fragment2">Go to Fragment 2</string>
-    <string name="fragment3">Go to Fragment 3</string>
+    <string name="fragment1">Fragment 1</string>
+    <string name="fragment2">Fragment 2</string>
+    <string name="fragment3">Fragment 3</string>
 
     <string name="first_item">First Item</string>
     <string name="second_item">Second Item</string>
