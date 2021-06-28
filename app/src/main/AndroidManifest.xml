@@ -144,6 +144,11 @@
             android:name=".FragmentArgInputActivity"
             android:parentActivityName=".HomeworkActivities">
         </activity>
+        <activity
+            android:label="@string/fragments_navdrawer"
+            android:name=".FragmentsOnNavDrawer"
+            android:parentActivityName=".HomeworkActivities">
+        </activity>
     </application>
 
 </manifest>

@@ -18,7 +18,7 @@ class HomeworkActivities : AppCompatActivity() {
     lateinit var btnMovie: Button
     lateinit var btnFragments: Button
     lateinit var btnFragmentArg: Button
-
+    lateinit var btnFragmentsNavDrawer: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -38,6 +38,7 @@ class HomeworkActivities : AppCompatActivity() {
         movieActivity()
         fragmentArgActivity()
         fragmentsActivity()
+        fragmentsNavDrawerActivity()
 
     }
     private fun getText(){
@@ -105,6 +106,13 @@ class HomeworkActivities : AppCompatActivity() {
         btnFragmentArg.setOnClickListener {
             val fragmentArgIntent = Intent(this, FragmentArgInputActivity::class.java)
             startActivity(fragmentArgIntent)
+        }
+    }
+    private fun fragmentsNavDrawerActivity() {
+        btnFragmentsNavDrawer = findViewById(R.id.btn_fragments_navdrawer)
+        btnFragmentsNavDrawer.setOnClickListener {
+            val fragmentsNavdrawerIntent = Intent(this, FragmentsOnNavDrawer::class.java)
+            startActivity(fragmentsNavdrawerIntent)
         }
     }
 }

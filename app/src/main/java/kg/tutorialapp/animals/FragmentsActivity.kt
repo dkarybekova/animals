@@ -7,7 +7,6 @@ import android.view.MenuItem
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
-import kotlinx.android.synthetic.main.fragments.*
 
 class FragmentsActivity : AppCompatActivity() {
     lateinit var btnFragment1: Button
