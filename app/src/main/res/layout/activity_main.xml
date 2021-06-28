@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_marginTop="60dp"
     android:baselineAligned="true"
     android:orientation="vertical"
@@ -13,10 +14,94 @@
         android:id="@+id/btn_homeworks"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/homeworks" />
+        android:text="@string/homeworks"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/btn_lessons"/>
     <Button
         android:id="@+id/btn_lessons"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/lessons" />
-</LinearLayout>
+        android:text="@string/lessons"
+        android:layout_marginBottom="300dp"
+        app:layout_constraintBottom_toBottomOf="@id/scrolling_bar"
+        app:layout_constraintTop_toBottomOf="@id/btn_homeworks"/>
+
+    <HorizontalScrollView
+        android:id="@+id/scrolling_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btn_lessons"
+        android:layout_width="0dp"
+        android:layout_marginTop="200dp"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            style="?android:attr/buttonBarButtonStyle">
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/first_item" />
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/second_item" />
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/third_item" />
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/fourth_item" />
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/fifth_item" />
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/sixth_item" />
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/seventh_item" />
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:text="@string/eighth_item" />
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/ninth_item" />
+
+            <Button
+                android:layout_width="140dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/tenth_item" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

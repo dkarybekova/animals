@@ -72,6 +72,11 @@
     <string name="third_item">Third Item</string>
     <string name="fourth_item">Fourth Item</string>
     <string name="fifth_item">Fifth Item</string>
+    <string name="sixth_item">Sixth Item</string>
+    <string name="seventh_item">Seventh Item</string>
+    <string name="eighth_item">Eighth Item</string>
+    <string name="ninth_item">Ninth Item</string>
+    <string name="tenth_item">Tenth Item</string>
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
 </resources>
