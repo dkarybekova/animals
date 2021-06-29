@@ -18,6 +18,7 @@ class LessonActivities : AppCompatActivity() {
     lateinit var btn31: Button
     lateinit var btn33: Button
     lateinit var btn34: Button
+    lateinit var btn42: Button
     lateinit var toggle: ActionBarDrawerToggle
     lateinit var drawerLayout: DrawerLayout
     lateinit var navigationView: NavigationView
@@ -35,6 +36,7 @@ class LessonActivities : AppCompatActivity() {
         lesson31()
         lesson33()
         lesson34()
+        lesson41_42()
         navigationDrawer()
     }
 
@@ -107,5 +109,13 @@ class LessonActivities : AppCompatActivity() {
             return true
         }
         return super.onOptionsItemSelected(item)
+    }
+
+    private fun lesson41_42(){
+        btn42 = findViewById(R.id.btn_41_42)
+        btn42.setOnClickListener {
+            val lesson42Intent = Intent(this, RecyclerViewActivity::class.java)
+            startActivity(lesson42Intent)
+        }
     }
 }

@@ -149,6 +149,11 @@
             android:name=".FragmentsOnNavDrawer"
             android:parentActivityName=".HomeworkActivities">
         </activity>
+        <activity
+            android:label="@string/lesson41_42"
+            android:name=".RecyclerViewActivity"
+            android:parentActivityName=".LessonActivities">
+        </activity>
     </application>
 
 </manifest>
