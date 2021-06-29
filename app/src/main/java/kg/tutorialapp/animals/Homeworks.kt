@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 class HomeworkActivities : AppCompatActivity() {
 
     lateinit var textview: TextView
+    lateinit var btnView: Button
     lateinit var btnCalc: Button
     lateinit var btnAnimal: Button
     lateinit var btnChronometer: Button
@@ -29,6 +30,7 @@ class HomeworkActivities : AppCompatActivity() {
         actionBar.setDisplayHomeAsUpEnabled(true)
 
         getText()
+        simpleViewActivity()
         animalsActivity()
         calcActivity()
         colorActivity()
@@ -44,6 +46,13 @@ class HomeworkActivities : AppCompatActivity() {
     private fun getText(){
         textview = findViewById(R.id.textMain) as TextView
         textview.text = getString((R.string.homeworks))
+    }
+    private fun simpleViewActivity() {
+        btnView = findViewById(R.id.btn_simpleview)
+        btnView.setOnClickListener {
+            val simpleViewIntent = Intent(this, SimpleViewActivity::class.java)
+            startActivity(simpleViewIntent)
+        }
     }
     private fun animalsActivity() {
         btnAnimal = findViewById(R.id.btn_animals)

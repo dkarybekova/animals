@@ -3,6 +3,7 @@
     <string name="homeworks"> Homeworks </string>
     <string name="lessons"> Lessons </string>
 
+    <string name="simple_view">Simple View</string>
     <string name="calculator">Calculator</string>
     <string name="animals">Animals</string>
     <string name="chronometer">Chronometer</string>
@@ -19,6 +20,11 @@
     <string name="lesson33">Lesson32_33 Activity Lifecycle</string>
     <string name="lesson34">Lesson34 Activity Stack</string>
     <string name="lesson41_42">Lesson 41-42 Recycler View</string>
+
+    <string name="text1">Урок 23</string>
+    <string name="text2">Домашнее задание 23</string>
+    <string name="button">Кнопка</string>
+    <string name="text_first">Измените цвет и размер текста в TextView а с button измените background(фон),размер и запустите приложения.</string>
 
     <string name="first">Snake</string>
     <string name="second">Shark</string>
@@ -84,4 +90,6 @@
     <string name="noteTitle">Homework 42</string>
     <string name="noteText">Homework 42 Notification text</string>
     <string name="view_holder">View Holder</string>
+
+
 </resources>

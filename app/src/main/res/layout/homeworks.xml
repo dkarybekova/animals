@@ -24,6 +24,11 @@
             android:textSize="35sp" />
     </LinearLayout>
     <Button
+        android:id="@+id/btn_simpleview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/simple_view" />
+    <Button
         android:id="@+id/btn_animals"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
