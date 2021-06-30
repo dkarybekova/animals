@@ -20,6 +20,7 @@ class HomeworkActivities : AppCompatActivity() {
     lateinit var btnFragments: Button
     lateinit var btnFragmentArg: Button
     lateinit var btnFragmentsNavDrawer: Button
+    lateinit var btnRecyclerEdit: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -41,7 +42,7 @@ class HomeworkActivities : AppCompatActivity() {
         fragmentArgActivity()
         fragmentsActivity()
         fragmentsNavDrawerActivity()
-
+        recyclerEditTextActivity()
     }
     private fun getText(){
         textview = findViewById(R.id.textMain) as TextView
@@ -122,6 +123,13 @@ class HomeworkActivities : AppCompatActivity() {
         btnFragmentsNavDrawer.setOnClickListener {
             val fragmentsNavdrawerIntent = Intent(this, FragmentsOnNavDrawer::class.java)
             startActivity(fragmentsNavdrawerIntent)
+        }
+    }
+    private fun recyclerEditTextActivity() {
+        btnRecyclerEdit = findViewById(R.id.btn_recycler_edit)
+        btnRecyclerEdit.setOnClickListener {
+            val recyclerEditIntent = Intent(this, RecyclerEditText::class.java)
+            startActivity(recyclerEditIntent)
         }
     }
 }

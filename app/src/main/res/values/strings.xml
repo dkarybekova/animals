@@ -14,6 +14,7 @@
     <string name="fragments">Fragments</string>
     <string name="fragment_arg">Fragment Argument</string>
     <string name="fragments_navdrawer">Fragments On Nav Drawer</string>
+    <string name="recycler_edittext">Recycler EditText</string>
 
     <string name="lesson29">Lesson29 RelativeLayout</string>
     <string name="lesson31">Lesson31 ConstraintLayout</string>
