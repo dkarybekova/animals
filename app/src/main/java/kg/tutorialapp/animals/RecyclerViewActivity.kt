@@ -5,7 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.recycler.*
 
 class RecyclerViewActivity: AppCompatActivity() {
-    lateinit var myAdapter: MyAdapter
+    private lateinit var myAdapter: MyAdapter
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,6 +22,6 @@ class RecyclerViewActivity: AppCompatActivity() {
         myAdapter = MyAdapter()
 //        recycler = findViewById(R.id.recyclerView)
         recyclerView.adapter = myAdapter
-        myAdapter.setItems(Data.getLongListOfItems())
+        myAdapter.setNewItems(Data.getLongListOfItems())
     }
 }

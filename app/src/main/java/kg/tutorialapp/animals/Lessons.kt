@@ -76,6 +76,13 @@ class LessonActivities : AppCompatActivity() {
             startActivity(lesson34Intent)
         }
     }
+    private fun lesson41_42(){
+        btn42 = findViewById(R.id.btn_41_42)
+        btn42.setOnClickListener {
+            val lesson42Intent = Intent(this, RecyclerViewActivity::class.java)
+            startActivity(lesson42Intent)
+        }
+    }
 
     private fun navigationDrawer(){
         drawerLayout = findViewById(R.id.drawer_layout)
@@ -109,13 +116,5 @@ class LessonActivities : AppCompatActivity() {
             return true
         }
         return super.onOptionsItemSelected(item)
-    }
-
-    private fun lesson41_42(){
-        btn42 = findViewById(R.id.btn_41_42)
-        btn42.setOnClickListener {
-            val lesson42Intent = Intent(this, RecyclerViewActivity::class.java)
-            startActivity(lesson42Intent)
-        }
     }
 }
