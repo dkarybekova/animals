@@ -1,11 +1,12 @@
 package kg.tutorialapp.animals
 
+import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.recycler.*
 
-class RecyclerViewActivity: AppCompatActivity() {
-    private lateinit var myAdapter: MyAdapter
+class RecyclerViewActivity: AppCompatActivity(), FragmentItemsListener {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -19,9 +20,21 @@ class RecyclerViewActivity: AppCompatActivity() {
     }
 
     private fun setup() {
-        myAdapter = MyAdapter()
-//        recycler = findViewById(R.id.recyclerView)
-        recyclerView.adapter = myAdapter
-        myAdapter.setNewItems(Data.getLongListOfItems())
+        supportFragmentManager.beginTransaction()
+            .add(R.id.container, FragmentItems())
+            .addToBackStack(null)
+            .commit()
+    }
+    override fun openFragmentItemDetails(id: Long) {
+        supportFragmentManager
+            .beginTransaction()
+            .replace(R.id.container, FragmentItemDetails.newInstance(id))
+            .addToBackStack(null)
+            .commit()
+    }
+
+    override fun openBrowser(url: String) {
+        val intent = Intent(Intent.ACTION_VIEW, Uri.parse(url))
+        startActivity(intent)
     }
 }

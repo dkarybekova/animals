@@ -91,6 +91,6 @@
     <string name="noteTitle">Homework 42</string>
     <string name="noteText">Homework 42 Notification text</string>
     <string name="view_holder">View Holder</string>
-
+    <string name="details">More...</string>
 
 </resources>

@@ -9,10 +9,11 @@ import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import kotlin.collections.ArrayList
 
-class MyAdapter2(private val context: Context, private val myList: ArrayList<String>): RecyclerView.Adapter<MyAdapter2.ViewHolder>(){
+class MyAdapter2(private val context: Context, private val myList: ArrayList<String>) :
+    RecyclerView.Adapter<MyAdapter2.ViewHolder>() {
 
 
-    inner class ViewHolder(itemView: View): RecyclerView.ViewHolder(itemView) {
+    inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         fun bind(myItem: String) {
             val tvTitle = itemView.findViewById<TextView>(R.id.text_viewholder)
             tvTitle.text = myItem
@@ -24,7 +25,8 @@ class MyAdapter2(private val context: Context, private val myList: ArrayList<Str
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
-        val myListItem = LayoutInflater.from(context).inflate(R.layout.item_myviewholder, parent, false)
+        val myListItem =
+            LayoutInflater.from(context).inflate(R.layout.item_myviewholder, parent, false)
         return ViewHolder(myListItem)
     }
 

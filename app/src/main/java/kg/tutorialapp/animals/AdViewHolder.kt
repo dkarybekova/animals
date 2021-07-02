@@ -11,10 +11,14 @@ class AdViewHolder(itemView: View): BaseViewHolder<Any>(itemView) {
         itemView.ad_text.text = item
     }
     companion object {
-        fun create(parent: ViewGroup):AdViewHolder {
+        fun create(parent: ViewGroup, listener: MyAdapter.OnClickListener): BaseViewHolder<Any>{
             val view = LayoutInflater.from(parent.context)
                 .inflate(R.layout.item_ad_viewholder,parent,false)
-            return AdViewHolder(view)
+            return AdViewHolder(view).apply {
+                itemView.setOnClickListener {
+                    listener.onAdClick(adapterPosition)
+                }
+            }
         }
     }
 }

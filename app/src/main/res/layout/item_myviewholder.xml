@@ -13,7 +13,7 @@
         android:layout_height="wrap_content">
 
         <ImageView
-            android:id="@+id/icon"
+            android:id="@+id/icon_image"
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_marginStart="16dp"
@@ -30,10 +30,21 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="16dp"
             android:text="@string/view_holder"
-            app:layout_constraintBottom_toBottomOf="@id/icon"
+            app:layout_constraintBottom_toBottomOf="@id/icon_image"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@id/icon"
-            app:layout_constraintTop_toTopOf="@id/icon"/>
+            app:layout_constraintStart_toEndOf="@id/icon_image"
+            app:layout_constraintTop_toTopOf="@id/icon_image"/>
+
+        <Button
+            android:id="@+id/btn_holder"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:text="@string/details"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </androidx.cardview.widget.CardView>
