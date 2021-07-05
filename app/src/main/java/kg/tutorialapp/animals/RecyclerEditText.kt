@@ -21,7 +21,7 @@ class RecyclerEditText : AppCompatActivity() {
         setContentView(R.layout.recycler_edittext)
 
         dataText = findViewById(R.id.recycler_edit)
-        btn_submit = findViewById(R.id.btn_recycler)
+        btn_submit = findViewById(R.id.btn_add_item)
         recyclerView = findViewById(R.id.recyclerView)
 
         myAdapter = MyAdapter2(this, myList)

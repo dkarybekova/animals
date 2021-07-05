@@ -92,5 +92,7 @@
     <string name="noteText">Homework 42 Notification text</string>
     <string name="view_holder">View Holder</string>
     <string name="details">More...</string>
+    <string name="delete">Delete</string>
+    <string name="add">Add</string>
 
 </resources>
