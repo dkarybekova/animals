@@ -180,6 +180,12 @@
             android:parentActivityName=".HomeworkActivities">
         </activity>
 
+        <activity
+            android:label="@string/shared_preferences"
+            android:name=".SharedPreferences"
+            android:parentActivityName=".HomeworkActivities">
+        </activity>
+
     </application>
 
 </manifest>
