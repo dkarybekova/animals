@@ -6,11 +6,13 @@
 
     <application
         android:allowBackup="true"
+        android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Animals"
         tools:ignore="AllowBackup">
+
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -19,173 +21,130 @@
             </intent-filter>
         </activity>
         <activity
-            android:label="@string/homeworks"
             android:name=".HomeworkActivities"
-            android:parentActivityName=".MainActivity">
-        </activity>
-
+            android:label="@string/homeworks"
+            android:parentActivityName=".MainActivity" />
         <activity
-            android:label="@string/lessons"
             android:name=".LessonActivities"
-            android:parentActivityName=".MainActivity">
-        </activity>
-
+            android:label="@string/lessons"
+            android:parentActivityName=".MainActivity"/>
         <activity
-            android:label="@string/simple_view"
             android:name=".SimpleViewActivity"
-            android:parentActivityName=".HomeworkActivities">
-        </activity>
-
+            android:label="@string/simple_view"
+            android:parentActivityName=".HomeworkActivities" />
         <activity
-            android:label="@string/animals"
             android:name=".AnimalActivity"
-            android:parentActivityName=".HomeworkActivities">
-        </activity>
-
+            android:label="@string/animals"
+            android:parentActivityName=".HomeworkActivities" />
         <activity
-            android:label="@string/calculator"
             android:name=".CalcActivity"
-            android:parentActivityName=".HomeworkActivities">
-        </activity>
-
+            android:label="@string/calculator"
+            android:parentActivityName=".HomeworkActivities" />
         <activity
-            android:label="@string/chronometer"
             android:name=".ChronometerActivity"
-            android:parentActivityName=".HomeworkActivities">
-        </activity>
-
+            android:label="@string/chronometer"
+            android:parentActivityName=".HomeworkActivities" />
         <activity
-            android:label="@string/color"
             android:name=".ColorActivity"
-            android:parentActivityName=".HomeworkActivities">
-        </activity>
-
+            android:label="@string/color"
+            android:parentActivityName=".HomeworkActivities" />
         <activity
-            android:label="@string/full_calculator"
             android:name=".CalculatorActivity"
-            android:parentActivityName=".HomeworkActivities">
-        </activity>
-
+            android:label="@string/full_calculator"
+            android:parentActivityName=".HomeworkActivities" />
         <activity
-            android:label="@string/lesson29"
             android:name=".RelativeLayoutActivity"
-            android:parentActivityName=".LessonActivities">
-        </activity>
-
+            android:label="@string/lesson29"
+            android:parentActivityName=".LessonActivities" />
         <activity
-            android:label="@string/gestures"
             android:name=".GesturesActivity"
-            android:parentActivityName=".HomeworkActivities">
-        </activity>
-
+            android:label="@string/gestures"
+            android:parentActivityName=".HomeworkActivities" />
         <activity
-            android:label="@string/lesson31"
             android:name=".ConstraintLayoutActivity"
-            android:parentActivityName=".HomeworkActivities">
-        </activity>
-
+            android:label="@string/lesson31"
+            android:parentActivityName=".HomeworkActivities" />
         <activity
-            android:label="@string/movie_poster"
             android:name=".MoviePosterActivity"
-            android:parentActivityName=".HomeworkActivities">
-        </activity>
-
+            android:label="@string/movie_poster"
+            android:parentActivityName=".HomeworkActivities" />
         <activity
-            android:label="@string/lesson33"
             android:name=".LifecycleActivity"
-            android:parentActivityName=".LessonActivities">
-        </activity>
-
+            android:label="@string/lesson33"
+            android:parentActivityName=".LessonActivities" />
         <activity
-            android:label="@string/activity_text_output"
             android:name=".ActivityOutput"
-            android:parentActivityName=".LifecycleActivity">
-        </activity>
-
+            android:label="@string/activity_text_output"
+            android:parentActivityName=".LifecycleActivity" />
         <activity
-            android:label="@string/a"
             android:name=".ActivityA"
-            android:parentActivityName=".LessonActivities">
-        </activity>
-
+            android:label="@string/a"
+            android:parentActivityName=".LessonActivities" />
         <activity
-            android:label="@string/b"
             android:name=".ActivityB"
-            android:parentActivityName=".LessonActivities">
-        </activity>
-
+            android:label="@string/b"
+            android:parentActivityName=".LessonActivities" />
         <activity
-            android:label="@string/c"
             android:name=".ActivityC"
-            android:parentActivityName=".LessonActivities">
-        </activity>
-
+            android:label="@string/c"
+            android:parentActivityName=".LessonActivities" />
         <activity
-            android:label="@string/d"
             android:name=".ActivityD"
-            android:parentActivityName=".LessonActivities">
-        </activity>
-
+            android:label="@string/d"
+            android:parentActivityName=".LessonActivities" />
         <activity
-            android:label="@string/fragments"
             android:name=".FragmentsActivity"
-            android:parentActivityName=".HomeworkActivities">
-        </activity>
-
+            android:label="@string/fragments"
+            android:parentActivityName=".HomeworkActivities"/>
         <activity
-            android:label="@string/fragment1"
             android:name=".ActivityFragment1"
-            android:parentActivityName=".HomeworkActivities">
-        </activity>
-
+            android:label="@string/fragment1"
+            android:parentActivityName=".HomeworkActivities"/>
         <activity
-            android:label="@string/fragment2"
             android:name=".ActivityFragment2"
-            android:parentActivityName=".LessonActivities">
-        </activity>
-
+            android:label="@string/fragment2"
+            android:parentActivityName=".LessonActivities"/>
         <activity
-            android:label="@string/fragment3"
             android:name=".ActivityFragment3"
-            android:parentActivityName=".LessonActivities">
-        </activity>
-
+            android:label="@string/fragment3"
+            android:parentActivityName=".LessonActivities"/>
         <activity
-            android:label="@string/fragment_arg"
             android:name=".FragmentArgOutputActivity"
-            android:parentActivityName=".HomeworkActivities">
-        </activity>
-
-        <activity
             android:label="@string/fragment_arg"
+            android:parentActivityName=".HomeworkActivities"/>
+        <activity
             android:name=".FragmentArgInputActivity"
-            android:parentActivityName=".HomeworkActivities">
-        </activity>
-
+            android:label="@string/fragment_arg"
+            android:parentActivityName=".HomeworkActivities"/>
         <activity
-            android:label="@string/fragments_navdrawer"
             android:name=".FragmentsOnNavDrawer"
-            android:parentActivityName=".HomeworkActivities">
-        </activity>
-
+            android:label="@string/fragments_navdrawer"
+            android:parentActivityName=".HomeworkActivities"/>
         <activity
-            android:label="@string/lesson41_42"
             android:name=".RecyclerViewActivity"
-            android:parentActivityName=".LessonActivities">
-        </activity>
-
+            android:label="@string/lesson41_42"
+            android:parentActivityName=".LessonActivities"/>
         <activity
-            android:label="@string/recycler_edittext"
             android:name=".RecyclerEditText"
-            android:parentActivityName=".HomeworkActivities">
-        </activity>
-
+            android:label="@string/recycler_edittext"
+            android:parentActivityName=".HomeworkActivities"/>
         <activity
-            android:label="@string/shared_preferences"
             android:name=".SharedPreferences"
-            android:parentActivityName=".HomeworkActivities">
-        </activity>
+            android:label="@string/shared_preferences"
+            android:parentActivityName=".HomeworkActivities"/>
 
+        <receiver
+            android:name=".MessageReceiver"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="kg.tutorialapp.action.MESSAGE" />
+            </intent-filter>
+        </receiver>
+        <activity
+            android:name=".ReceiverActivity"
+            android:label="@string/receiver"
+            android:parentActivityName=".HomeworkActivities"/>
     </application>
 
 </manifest>

@@ -13,6 +13,8 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.app.NotificationCompat
 import android.app.NotificationChannel
 import android.app.NotificationManager
+import android.util.Log
+import android.view.View
 import androidx.core.app.NotificationManagerCompat
 
 class MainActivity : AppCompatActivity() {
@@ -23,6 +25,9 @@ class MainActivity : AppCompatActivity() {
 
     private val NotificationID = 103
     private val CHANNEL_ID = "channel_id_01"
+
+//    private val receiverAction = "kg.tutorialapp.action.MESSAGE"
+//    private val receiverMessage = "This is message from receiver"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -97,5 +102,4 @@ class MainActivity : AppCompatActivity() {
             notify(NotificationID, builder.build())
         }
     }
-
 }

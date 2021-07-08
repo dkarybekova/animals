@@ -16,6 +16,7 @@
     <string name="fragments_navdrawer">Fragments On Nav Drawer</string>
     <string name="recycler_edittext">Recycler EditText</string>
     <string name="shared_preferences">Shared Preferences</string>
+    <string name="receiver">Receiver</string>
 
     <string name="lesson29">Lesson29 RelativeLayout</string>
     <string name="lesson31">Lesson31 ConstraintLayout</string>
@@ -96,4 +97,5 @@
     <string name="delete">Delete</string>
     <string name="add">Add</string>
     <string name="save">Save</string>
+    <string name="send_receiver">Send Broadcast</string>
 </resources>
