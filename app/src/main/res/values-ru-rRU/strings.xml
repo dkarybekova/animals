@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Животные</string>
+    <string name="homeworks"> Домашние задания </string>
+    <string name="lessons"> Уроки </string>
+
+    <string name="simple_view">Простой Вью</string>
+    <string name="calculator">Калькулятор</string>
+    <string name="animals">Животные</string>
+    <string name="chronometer">Хронометр</string>
+    <string name="color">Мой Цвет</string>
+    <string name="full_calculator">Полноценный калькулятор</string>
+    <string name="gestures">Жесты</string>
+    <string name="movie_poster">Постер фильма</string>
+    <string name="fragments">Фрагменты</string>
+    <string name="fragment_arg">Аргумент во фрагменте</string>
+    <string name="fragments_navdrawer">Фрагменты в бургере в блоке навигации</string>
+    <string name="recycler_edittext">Ресайклер с вводом данных</string>
+    <string name="shared_preferences">Использование SharedPreferences</string>
+
+    <string name="lesson29">Урок 29 RelativeLayout</string>
+    <string name="lesson31">Урок 31 ConstraintLayout</string>
+    <string name="lesson33">Урок 32_33 Activity Lifecycle</string>
+    <string name="lesson34">Урок 34 Activity Stack</string>
+    <string name="lesson41_42">Урок 41_42 Recycler View</string>
+
+    <string name="first_item">Первый</string>
+    <string name="second_item">Второй</string>
+    <string name="third_item">Третий</string>
+    <string name="fourth_item">Четвертый</string>
+    <string name="fifth_item">Пятый</string>
+    <string name="sixth_item">Шестой</string>
+    <string name="seventh_item">Седьмой</string>
+    <string name="eighth_item">Восьмой</string>
+    <string name="ninth_item">Девятый</string>
+    <string name="tenth_item">Десятый</string>
+    <string name="notification">Уведомление</string>
+</resources>

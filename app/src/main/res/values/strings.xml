@@ -1,4 +1,4 @@
-<resources>
+<resources translatable="false">
     <string name="app_name">Animals</string>
     <string name="homeworks"> Homeworks </string>
     <string name="lessons"> Lessons </string>
