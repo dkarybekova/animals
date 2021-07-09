@@ -17,6 +17,8 @@
     <string name="fragments_navdrawer">Фрагменты в бургере в блоке навигации</string>
     <string name="recycler_edittext">Ресайклер с вводом данных</string>
     <string name="shared_preferences">Использование SharedPreferences</string>
+    <string name="receiver">Ресивер</string>
+    <string name="service">Простой сервис</string>
 
     <string name="lesson29">Урок 29 RelativeLayout</string>
     <string name="lesson31">Урок 31 ConstraintLayout</string>

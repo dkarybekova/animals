@@ -12,6 +12,20 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Animals"
         tools:ignore="AllowBackup">
+        <receiver
+            android:name=".MessageReceiver"
+            android:enabled="true"
+            android:exported="true"
+            tools:ignore="ExportedReceiver">
+            <intent-filter>
+                <action android:name="kg.tutorialapp.action.MESSAGE" />
+            </intent-filter>
+        </receiver>
+        <service
+            android:name=".SimpleService"
+            android:enabled="true"
+            android:exported="false">
+        </service>
 
         <activity android:name=".MainActivity">
             <intent-filter>
@@ -27,7 +41,7 @@
         <activity
             android:name=".LessonActivities"
             android:label="@string/lessons"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".SimpleViewActivity"
             android:label="@string/simple_view"
@@ -95,56 +109,51 @@
         <activity
             android:name=".FragmentsActivity"
             android:label="@string/fragments"
-            android:parentActivityName=".HomeworkActivities"/>
+            android:parentActivityName=".HomeworkActivities" />
         <activity
             android:name=".ActivityFragment1"
             android:label="@string/fragment1"
-            android:parentActivityName=".HomeworkActivities"/>
+            android:parentActivityName=".HomeworkActivities" />
         <activity
             android:name=".ActivityFragment2"
             android:label="@string/fragment2"
-            android:parentActivityName=".LessonActivities"/>
+            android:parentActivityName=".LessonActivities" />
         <activity
             android:name=".ActivityFragment3"
             android:label="@string/fragment3"
-            android:parentActivityName=".LessonActivities"/>
+            android:parentActivityName=".LessonActivities" />
         <activity
             android:name=".FragmentArgOutputActivity"
             android:label="@string/fragment_arg"
-            android:parentActivityName=".HomeworkActivities"/>
+            android:parentActivityName=".HomeworkActivities" />
         <activity
             android:name=".FragmentArgInputActivity"
             android:label="@string/fragment_arg"
-            android:parentActivityName=".HomeworkActivities"/>
+            android:parentActivityName=".HomeworkActivities" />
         <activity
             android:name=".FragmentsOnNavDrawer"
             android:label="@string/fragments_navdrawer"
-            android:parentActivityName=".HomeworkActivities"/>
+            android:parentActivityName=".HomeworkActivities" />
         <activity
             android:name=".RecyclerViewActivity"
             android:label="@string/lesson41_42"
-            android:parentActivityName=".LessonActivities"/>
+            android:parentActivityName=".LessonActivities" />
         <activity
             android:name=".RecyclerEditText"
             android:label="@string/recycler_edittext"
-            android:parentActivityName=".HomeworkActivities"/>
+            android:parentActivityName=".HomeworkActivities" />
         <activity
             android:name=".SharedPreferences"
             android:label="@string/shared_preferences"
-            android:parentActivityName=".HomeworkActivities"/>
-
-        <receiver
-            android:name=".MessageReceiver"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="kg.tutorialapp.action.MESSAGE" />
-            </intent-filter>
-        </receiver>
+            android:parentActivityName=".HomeworkActivities" />
         <activity
             android:name=".ReceiverActivity"
             android:label="@string/receiver"
-            android:parentActivityName=".HomeworkActivities"/>
+            android:parentActivityName=".HomeworkActivities" />
+        <activity
+            android:name=".ServiceActivity"
+            android:label="@string/service"
+            android:parentActivityName=".HomeworkActivities" />
     </application>
 
 </manifest>

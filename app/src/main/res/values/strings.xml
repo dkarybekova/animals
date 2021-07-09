@@ -17,6 +17,7 @@
     <string name="recycler_edittext">Recycler EditText</string>
     <string name="shared_preferences">Shared Preferences</string>
     <string name="receiver">Receiver</string>
+    <string name="service">Simple Service</string>
 
     <string name="lesson29">Lesson29 RelativeLayout</string>
     <string name="lesson31">Lesson31 ConstraintLayout</string>

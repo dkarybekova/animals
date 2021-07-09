@@ -5,24 +5,11 @@ import android.content.Intent
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
+import kotlinx.android.synthetic.main.homeworks.*
 
 class HomeworkActivities : AppCompatActivity() {
 
     lateinit var textview: TextView
-    lateinit var btnView: Button
-    lateinit var btnCalc: Button
-    lateinit var btnAnimal: Button
-    lateinit var btnChronometer: Button
-    lateinit var btnColor: Button
-    lateinit var btnCalculator: Button
-    lateinit var btnGestures: Button
-    lateinit var btnMovie: Button
-    lateinit var btnFragments: Button
-    lateinit var btnFragmentArg: Button
-    lateinit var btnFragmentsNavDrawer: Button
-    lateinit var btnRecyclerEdit: Button
-    lateinit var btnPreferences: Button
-    lateinit var btnReceiver: Button
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -47,108 +34,102 @@ class HomeworkActivities : AppCompatActivity() {
         recyclerEditTextActivity()
         preferencesActivity()
         receiverActivity()
+        serviceActivity()
     }
     private fun getText(){
         textview = findViewById(R.id.textMain) as TextView
         textview.text = getString((R.string.homeworks))
     }
     private fun simpleViewActivity() {
-        btnView = findViewById(R.id.btn_simpleview)
-        btnView.setOnClickListener {
+        btn_simpleview.setOnClickListener {
             val simpleViewIntent = Intent(this, SimpleViewActivity::class.java)
             startActivity(simpleViewIntent)
         }
     }
     private fun animalsActivity() {
-        btnAnimal = findViewById(R.id.btn_animals)
-        btnAnimal.setOnClickListener {
+        btn_animals.setOnClickListener {
             val animalIntent = Intent(this, AnimalActivity::class.java)
             startActivity(animalIntent)
         }
     }
     private fun calcActivity() {
-        btnCalc = findViewById(R.id.btn_calc)
-        btnCalc.setOnClickListener {
+        btn_calc.setOnClickListener {
             val calcIntent = Intent(this, CalcActivity::class.java)
             startActivity(calcIntent)
         }
     }
     private fun chronoActivity() {
-        btnChronometer = findViewById(R.id.btn_chrono)
-        btnChronometer.setOnClickListener {
+        btn_chrono.setOnClickListener {
             val chronometerIntent = Intent(this, ChronometerActivity::class.java)
             startActivity(chronometerIntent)
         }
     }
     private fun colorActivity() {
-        btnColor = findViewById(R.id.btn_color)
-        btnColor.setOnClickListener {
+        btn_color.setOnClickListener {
             val colorIntent = Intent(this, ColorActivity::class.java)
             startActivity(colorIntent)
         }
     }
     private fun calculatorActivity() {
-        btnCalculator = findViewById(R.id.btn_calculator)
-        btnCalculator.setOnClickListener {
+        btn_calculator.setOnClickListener {
             val calculatorIntent = Intent(this, CalculatorActivity::class.java)
             startActivity(calculatorIntent)
         }
     }
     private fun gesturesActivity() {
-        btnGestures = findViewById(R.id.btn_gestures)
-        btnGestures.setOnClickListener {
+        btn_gestures.setOnClickListener {
             val gesturesIntent = Intent(this, GesturesActivity::class.java)
             startActivity(gesturesIntent)
         }
     }
     private fun movieActivity() {
-        btnMovie = findViewById(R.id.btn_movie)
-        btnMovie.setOnClickListener {
+        btn_movie.setOnClickListener {
             val movieIntent = Intent(this, MoviePosterActivity::class.java)
             startActivity(movieIntent)
         }
     }
     private fun fragmentsActivity() {
-        btnFragments = findViewById(R.id.btn_fragments)
-        btnFragments.setOnClickListener {
+        btn_fragments.setOnClickListener {
             val fragmentsIntent = Intent(this, FragmentsActivity::class.java)
             startActivity(fragmentsIntent)
         }
     }
     private fun fragmentArgActivity() {
-        btnFragmentArg = findViewById(R.id.btn_fragment_arg)
-        btnFragmentArg.setOnClickListener {
+        btn_fragment_arg.setOnClickListener {
             val fragmentArgIntent = Intent(this, FragmentArgInputActivity::class.java)
             startActivity(fragmentArgIntent)
         }
     }
     private fun fragmentsNavDrawerActivity() {
-        btnFragmentsNavDrawer = findViewById(R.id.btn_fragments_navdrawer)
-        btnFragmentsNavDrawer.setOnClickListener {
+        btn_fragments_navdrawer.setOnClickListener {
             val fragmentsNavdrawerIntent = Intent(this, FragmentsOnNavDrawer::class.java)
             startActivity(fragmentsNavdrawerIntent)
         }
     }
     private fun recyclerEditTextActivity() {
-        btnRecyclerEdit = findViewById(R.id.btn_recycler_edit)
-        btnRecyclerEdit.setOnClickListener {
+        btn_recycler_edit.setOnClickListener {
             val recyclerEditIntent = Intent(this, RecyclerEditText::class.java)
             startActivity(recyclerEditIntent)
         }
     }
     private fun preferencesActivity() {
-        btnPreferences = findViewById(R.id.btn_preferences)
-        btnPreferences.setOnClickListener {
+        btn_preferences.setOnClickListener {
             val preferencesIntent = Intent(this, SharedPreferences::class.java)
             startActivity(preferencesIntent)
         }
     }
 
     private fun receiverActivity (){
-        btnReceiver = findViewById(R.id.btn_receiver)
-        btnReceiver.setOnClickListener {
+        btn_receiver.setOnClickListener {
             val receiverIntent = Intent(this, ReceiverActivity::class.java)
             startActivity(receiverIntent)
+        }
+    }
+
+    private fun serviceActivity (){
+        btn_service.setOnClickListener {
+            val serviceIntent = Intent(this, ServiceActivity()::class.java)
+            startActivity(serviceIntent)
         }
     }
 }
